@@ -12,8 +12,15 @@ arraydemoviles.push(SamsungFlip10);
 arraydemoviles.push(HuaweiMateview);
 arraydemoviles.push(XiaomiRedmi10);
 
-let LibraryofMobiles:MobileLibrary = new MobileLibrary("Primera Libreria", "Local", arraydemoviles)
+let libraryofmobiles:MobileLibrary = new MobileLibrary("Primera Libreria", "Local", arraydemoviles)
 
-console.log(LibraryofMobiles.totalPriceCalculation());
+console.log(libraryofmobiles.getTotalPrice());
 console.log(Iphone12Pro.getPrice())
-console.log(LibraryofMobiles.getLocation());
+console.log(libraryofmobiles.getLocation());
+libraryofmobiles.printLibrary();
+libraryofmobiles.setLocation("Madrid")
+console.log(libraryofmobiles.getLocation());
+libraryofmobiles.setName("Mejor libreria que la Casa del Libro")
+console.log(libraryofmobiles.getName());
+
+

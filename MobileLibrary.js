@@ -6,6 +6,7 @@ var MobileLibrary = /** @class */ (function () {
         this.name = name;
         this.location = location;
         this.mobiles = mobiles;
+        this.totalprice = this.totalPriceCalculation();
     }
     MobileLibrary.prototype.getName = function () { return this.name; };
     MobileLibrary.prototype.setName = function (name) { this.name = name; };
@@ -21,6 +22,12 @@ var MobileLibrary = /** @class */ (function () {
             sumatoria += this.mobiles[index].getPrice();
         }
         return sumatoria;
+    };
+    MobileLibrary.prototype.printLibrary = function () {
+        console.log("This is all my mobiles:");
+        for (var index = 0; index < this.mobiles.length; index++) {
+            this.mobiles[index].printAll();
+        }
     };
     return MobileLibrary;
 }());
