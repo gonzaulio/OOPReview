@@ -8,11 +8,18 @@ console.log(Nokia3210);
 console.log(iPhone3G);
 console.log(SamsungGalaxy10);
 
-// Nokia3210.is5G = true;
-// Nokia3210.cameraNumber = 4;
-// console.log(Nokia3210);
-// console.log(iPhone3G);
-// console.log(SamsungGalaxy10);
+Nokia3210.setIs5G(true);
+Nokia3210.setCameraNumber(4);
 
-Nokia3210.printAll();
+console.log(Nokia3210);
+console.log(iPhone3G);
+console.log(SamsungGalaxy10);
 
+let arraymobile:mobile[] = [];
+arraymobile.push(Nokia3210);
+arraymobile.push(iPhone3G);
+arraymobile.push(SamsungGalaxy10);
+
+for (let index = 0; index < arraymobile.length; index++) {
+    arraymobile[index].printAll()
+}

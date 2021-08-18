@@ -7,9 +7,15 @@ var SamsungGalaxy10 = new mobile_1.mobile("Samsung Galaxy 10", "Galaxy 10", "Sam
 console.log(Nokia3210);
 console.log(iPhone3G);
 console.log(SamsungGalaxy10);
-// Nokia3210.is5G = true;
-// Nokia3210.cameraNumber = 4;
+Nokia3210.setIs5G(true);
+Nokia3210.setCameraNumber(4);
 console.log(Nokia3210);
 console.log(iPhone3G);
 console.log(SamsungGalaxy10);
-Nokia3210.printAll();
+var arraymobile = [];
+arraymobile.push(Nokia3210);
+arraymobile.push(iPhone3G);
+arraymobile.push(SamsungGalaxy10);
+for (var index = 0; index < arraymobile.length; index++) {
+    arraymobile[index].printAll();
+}
