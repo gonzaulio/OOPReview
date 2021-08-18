@@ -1,0 +1,17 @@
+"use strict";
+exports.__esModule = true;
+var mobile_1 = require("./mobile");
+var MobileLibrary_1 = require("./MobileLibrary");
+var Iphone12Pro = new mobile_1.mobile("Iphone 12 Pro", "12 Pro", "Apple", 256, "Blue", true, 3, 1200);
+var SamsungFlip10 = new mobile_1.mobile("Samsung Flip 10", "Flip 10", "Samsung", 64, "Negro", true, 2, 1500);
+var HuaweiMateview = new mobile_1.mobile("Huawei Mateview", "Mateview", "Huawei", 120, "Blanco", true, 2, 900);
+var XiaomiRedmi10 = new mobile_1.mobile("Xiaomi Redmi 10", "Redmi 10", "Xiaomi", 128, "Blanco", true, 3, 700);
+var arraydemoviles = [];
+arraydemoviles.push(Iphone12Pro);
+arraydemoviles.push(SamsungFlip10);
+arraydemoviles.push(HuaweiMateview);
+arraydemoviles.push(XiaomiRedmi10);
+var LibraryofMobiles = new MobileLibrary_1.MobileLibrary("Primera Libreria", "Local", arraydemoviles);
+console.log(LibraryofMobiles.totalPriceCalculation());
+console.log(Iphone12Pro.getPrice());
+console.log(LibraryofMobiles.getLocation());
